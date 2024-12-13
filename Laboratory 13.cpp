@@ -5,6 +5,7 @@
 * Description: This program reads in a text file and displays the frequency of each letter.
 */
 #include <iostream>
+#include <iomanip>
 #include <fstream>
 #include <string>
 
@@ -120,6 +121,7 @@ bool readFromFile(string filename)
                 case(121): Y++; break;
                 case(90): Z++; break;
                 case(122): Z++; break;
+                default: characters--; break;
                 }
 
             }
@@ -135,31 +137,30 @@ bool readFromFile(string filename)
     inFile.close();
     cout << "Characters: " << characters << endl;
     cout << "Frequency:\n";
-    cout << "'A': " << frqA << endl;
-    cout << "'B': " << frqB << endl;
-    cout << "'C': " << frqC << endl;
-    cout << "'D': " << frqD << endl;
-    cout << "'E': " << frqE << endl;
-    cout << "'F': " << frqF << endl;
-    cout << "'G': " << frqG << endl;
-    cout << "'H': " << frqH << endl;
-    cout << "'I': " << frqI << endl;
-    cout << "'J': " << frqJ << endl;
-    cout << "'K': " << frqK << endl;
-    cout << "'L': " << frqL << endl;
-    cout << "'M': " << frqM << endl;
-    cout << "'N': " << frqN << endl;
-    cout << "'O': " << frqO << endl;
-    cout << "'P': " << frqP << endl;
-    cout << "'Q': " << frqQ << endl;
-    cout << "'R': " << frqR << endl;
-    cout << "'S': " << frqS << endl;
-    cout << "'T': " << frqT << endl;
-    cout << "'U': " << frqU << endl;
-    cout << "'V': " << frqV << endl;
-    cout << "'W': " << frqW << endl;
-    cout << "'X': " << frqX << endl;
-    cout << "'Y': " << frqY << endl;
-    cout << "'Z': " << frqZ << endl;
+    cout << "'A': " << fixed << setprecision(3) << right << setw(6) << frqA << endl;
+    cout << "'B': " << fixed << setprecision(3) << right << setw(6) << frqB << endl;
+    cout << "'C': " << fixed << setprecision(3) << right << setw(6) << frqC << endl;
+    cout << "'D': " << fixed << setprecision(3) << right << setw(6) << frqD << endl;
+    cout << "'E': " << fixed << setprecision(3) << right << setw(6) << frqE << endl;
+    cout << "'F': " << fixed << setprecision(3) << right << setw(6) << frqF << endl;
+    cout << "'G': " << fixed << setprecision(3) << right << setw(6) << frqG << endl;
+    cout << "'I': " << fixed << setprecision(3) << right << setw(6) << frqI << endl;
+    cout << "'J': " << fixed << setprecision(3) << right << setw(6) << frqJ << endl;
+    cout << "'K': " << fixed << setprecision(3) << right << setw(6) << frqK << endl;
+    cout << "'L': " << fixed << setprecision(3) << right << setw(6) << frqL << endl;
+    cout << "'M': " << fixed << setprecision(3) << right << setw(6) << frqM << endl;
+    cout << "'N': " << fixed << setprecision(3) << right << setw(6) << frqN << endl;
+    cout << "'O': " << fixed << setprecision(3) << right << setw(6) << frqO << endl;
+    cout << "'P': " << fixed << setprecision(3) << right << setw(6) << frqP << endl;
+    cout << "'Q': " << fixed << setprecision(3) << right << setw(6) << frqQ << endl;
+    cout << "'R': " << fixed << setprecision(3) << right << setw(6) << frqR << endl;
+    cout << "'S': " << fixed << setprecision(3) << right << setw(6) << frqS << endl;
+    cout << "'T': " << fixed << setprecision(3) << right << setw(6) << frqT << endl;
+    cout << "'U': " << fixed << setprecision(3) << right << setw(6) << frqU << endl;
+    cout << "'V': " << fixed << setprecision(3) << right << setw(6) << frqV << endl;
+    cout << "'W': " << fixed << setprecision(3) << right << setw(6) << frqW << endl;
+    cout << "'X': " << fixed << setprecision(3) << right << setw(6) << frqX << endl;
+    cout << "'Y': " << fixed << setprecision(3) << right << setw(6) << frqY << endl;
+    cout << "'Z': " << fixed << setprecision(3) << right << setw(6) << frqZ << endl;
     return true;
 }
